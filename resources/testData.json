@@ -1,0 +1,22 @@
+[
+  {
+    "validLogIn":
+    {
+      "username": "standard_user",
+      "password": "secret_sauce",
+      "expected": "Success"
+    },
+    "inValidLogIn":
+    {
+      "username": "wrongUserName",
+      "password": "wrongPassword",
+      "expected": "Username and password do not match"
+    },
+    "emptyPassword":
+    {
+      "username": "standard_user",
+      "password": "",
+      "expected": "Password is required"
+    }
+  }
+]
