@@ -11,6 +11,7 @@ public class InventoryPage {
     private By cartIcon = By.cssSelector("#shopping_cart_container > a");
     private By inventoryContainer = By.cssSelector("div[class = 'inventory_item']");
 
+
     public InventoryPage (WebDriver driver){
         this.driver = driver;
     }
@@ -26,5 +27,10 @@ public class InventoryPage {
     public int getProductSize(){
         List<WebElement> products = driver.findElements(inventoryContainer);
         return products.size();
+    }
+
+    public ShoppingCartBadge clickCartIcon() {
+        driver.findElement(cartIcon).click();
+        return new ShoppingCartBadge(driver);
     }
 }

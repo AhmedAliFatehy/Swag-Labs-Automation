@@ -1,7 +1,6 @@
 package Pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.DeviceRotation;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
@@ -24,7 +23,7 @@ public class LoginPage {
         driver.findElement(passwordField).sendKeys(password);
     }
 
-    public InventoryPage clickButton(){
+    public InventoryPage clickLogin(){
         driver.findElement(loginButton).click();
         return new InventoryPage(driver);
     }
@@ -35,5 +34,18 @@ public class LoginPage {
 
     public String getErrorMessage(){
         return driver.findElement(errorMessage).getText();
+    }
+
+    public String login(String username, String password) {
+
+        setUserName(username);
+        setPassword(password);
+        clickLogin();
+
+        if (getCurrentUrl().contains("inventory.html")) {
+            return "Success";
+        } else {
+            return getErrorMessage();
+        }
     }
 }
