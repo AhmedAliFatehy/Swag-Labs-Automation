@@ -1,0 +1,7 @@
+<suite name = "InventoryTests">
+    <test name = "Inventory">
+        <classes>
+            <class name="Inventory.InventoryTests"/>
+        </classes>
+    </test>
+</suite>

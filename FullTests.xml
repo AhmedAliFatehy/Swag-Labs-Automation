@@ -1,0 +1,9 @@
+<suite name="Full Regression Suite">
+    <suite-files>
+        <suite-file path="LoginScenariosTests.xml" />
+        <suite-file path="InventoryTests.xml" />
+        <suite-file path="SocialLinksTests.xml" />
+        <suite-file path="CartTests.xml" />
+        <suite-file path="EndToEndScenario.xml"/>
+    </suite-files>
+</suite>

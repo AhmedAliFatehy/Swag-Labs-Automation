@@ -1,0 +1,9 @@
+<suite name = "SocialLinksTests">
+    <test name = "SocialLinks">
+        <classes>
+            <class name="SocialLinks.FaceBookLinkTest"/>
+            <class name="SocialLinks.LinkedInLinkTest"/>
+            <class name="SocialLinks.TwitterLinkTest"/>
+        </classes>
+    </test>
+</suite>

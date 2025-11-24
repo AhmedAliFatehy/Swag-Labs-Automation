@@ -1,0 +1,7 @@
+<suite name = "EndToEndTests">
+    <test name = "EndToEnd">
+        <classes>
+            <class name="CheckOut.CheckOutTests"/>
+        </classes>
+    </test>
+</suite>

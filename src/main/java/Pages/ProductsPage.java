@@ -11,7 +11,8 @@ public class ProductsPage {
     }
 
     private By getAddToCartButton(String productName) {
-        return By.xpath("//div[text()='" + productName + "']/../../..//button");
+        return By.xpath("//div[@class='inventory_item' and .//div[text()='"
+                + productName + "']]//button[contains(text(),'Add')]");
     }
 
     public void addProductToCart(String productName) {
@@ -19,7 +20,8 @@ public class ProductsPage {
     }
 
     private By getRemoveButton(String productName) {
-        return By.xpath("//div[text()='" + productName + "']/../../..//button[contains(text(),'Remove')]");
+        return By.xpath("//div[@class='inventory_item' and .//div[text()='"
+                + productName + "']]//button[contains(text(),'Remove')]");
     }
 
     public void removeProduct(String productName) {

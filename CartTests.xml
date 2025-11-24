@@ -1,0 +1,9 @@
+<suite name = "CartTests">
+    <test name = "Cart">
+        <classes>
+            <class name="Cart.CartEmptyTest"/>
+            <class name="Cart.AddToCartTests"/>
+            <class name="Cart.RemoveFromCartTests"/>
+        </classes>
+    </test>
+</suite>
