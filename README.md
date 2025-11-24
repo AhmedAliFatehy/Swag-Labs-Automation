@@ -9,7 +9,7 @@ The framework follows the **Page Object Model (POM)** and reads test data from *
 - Verified **cart visibility** and UI elements
 - Checked **social media links**
 - Added products to cart, verified items, and removed one successfully
-- (In Progress) Automating the **complete checkout flow**
+- Completed the full checkout flow (Add product → Cart → Checkout Info → Overview → Finish Page → Order completion)
 
 ## Tools & Technologies
 - Java  
